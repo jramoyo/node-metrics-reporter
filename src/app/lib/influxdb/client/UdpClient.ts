@@ -48,9 +48,9 @@ export default class UdpClient implements Client {
     }
 
     return Promise.all(
-            packets.map((packet) => {
-              return this.send(packet, 0, packet.length)
-            })
-        ).then(() => { return Promise.resolve() })
+      packets.map((packet) => {
+        return this.send(packet, 0, packet.length)
+      })
+    ).then(() => { return Promise.resolve() })
   }
 }

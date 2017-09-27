@@ -1,5 +1,7 @@
 # metrics-reporter
 
+Inspired by [`node-metrics-influxdb`](https://github.com/brandonhamilton/node-metrics-influxdb), but with an added abstraction allowing different reporting back-ends (only InfluxDB is supported for now).
+
 ### Usage
 
 ```js

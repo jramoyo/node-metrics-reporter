@@ -41,7 +41,7 @@ export default class InfluxDB implements report.Backend {
       }
     }
 
-        // TODO buffer
+    // TODO buffer
     return this.flush()
   }
 

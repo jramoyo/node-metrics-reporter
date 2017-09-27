@@ -8,11 +8,11 @@ export default class Reporter {
 
   private reportInterval: any
 
-    /**
-     *  @param options: {
-     *      reportIntervalTime: <milliseconds>
-     *  }
-     */
+  /**
+   *  @param options: {
+   *      reportIntervalTime: <milliseconds>
+   *  }
+   */
   constructor(namespace: string, backend: report.Backend, report: report.Report, options?: any) {
     this.namespace = namespace
     this.backend = backend
@@ -23,9 +23,9 @@ export default class Reporter {
     }
   }
 
-    /**
-     * shortcut for counter(name, 1, options)
-     */
+  /**
+   * shortcut for counter(name, 1, options)
+   */
   incr(name: string, options: any = {}): Promise<void> {
     return this.counter(name, 1, options)
   }
@@ -42,9 +42,9 @@ export default class Reporter {
     return this.applyMetric(name, 'Histogram', 'update', val, options)
   }
 
-    /**
-     * shortcut for meter(name, 1, options)
-     */
+  /**
+   * shortcut for meter(name, 1, options)
+   */
   mark(name: string, options: any = {}): Promise<void> {
     return this.meter(name, 1, options)
   }
@@ -65,12 +65,12 @@ export default class Reporter {
     if (this.reportInterval) { clearInterval(this.reportInterval) }
   }
 
-    /**
-     * options : {
-     *     tags = {},
-     *     runReport: true
-     * }
-     */
+  /**
+   * options : {
+   *     tags = {},
+   *     runReport: true
+   * }
+   */
   private applyMetric(name: string, type: string, func: string, val: any, options: any): Promise<void> {
     const fullname = `${this.namespace}.${name}`
     this.getOrCreateMetric(fullname, type).update(val, options.tags || {})

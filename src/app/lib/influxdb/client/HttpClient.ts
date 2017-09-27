@@ -25,9 +25,9 @@ export default class HttpClient implements Client {
     this.username = options.username
     this.password = options.password
 
-        // TODO for now precision will be in nanoseconds
-        // assert.ok(['n', 'u', 'ms', 's', 'm', 'h'].indexOf(precision) >= 0, 'Precision must be one of [n,u,ms,s,m,h]')
-        // this.precision = options.precision
+    // TODO for now precision will be in nanoseconds
+    // assert.ok(['n', 'u', 'ms', 's', 'm', 'h'].indexOf(precision) >= 0, 'Precision must be one of [n,u,ms,s,m,h]')
+    // this.precision = options.precision
     this.timeout = options.httpTimeout || 200
 
     if (options.consistency) {
@@ -73,11 +73,11 @@ export default class HttpClient implements Client {
 
   writePoints(batches: string[][]): Promise<void> {
     return Promise.all(
-            batches.map((batch) => {
-              const buf = new Buffer(batch.join('\n'))
-              return this.send(buf, 0, buf.length)
-            })
-        ).then(() => { return Promise.resolve() })
+      batches.map((batch) => {
+        const buf = new Buffer(batch.join('\n'))
+        return this.send(buf, 0, buf.length)
+      })
+    ).then(() => { return Promise.resolve() })
   }
 
 }
