@@ -1,0 +1,54 @@
+{
+  "name": "metrics-reporter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jramoyo/node-metrics-reporter.git"
+  },
+  "author": "Jan Amoyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jramoyo/node-metrics-reporter/issues"
+  },
+  "homepage": "https://github.com/jramoyo/node-metrics-reporter#readme",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "metrics": "^0.1.14",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/lodash": "^4.14.76",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.31",
+    "@types/sinon": "^2.3.5",
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-run-command": "0.0.9",
+    "gulp-size": "^2.1.0",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typescript": "^3.2.2",
+    "gulp-util": "^3.0.8",
+    "merge2": "^1.2.0",
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1",
+    "sinon": "^4.0.0",
+    "sinon-chai": "^2.13.0",
+    "ts-node": "^3.3.0",
+    "tsconfig-paths": "^2.3.0",
+    "tslint-config-airbnb": "^5.3.0",
+    "typescript": "^2.5.3",
+    "yargs": "^9.0.1"
+  }
+}

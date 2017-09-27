@@ -1,0 +1,5 @@
+--compilers ts:ts-node/register
+--require tsconfig-paths/register
+--timeout 10000
+--recursive
+--bail
