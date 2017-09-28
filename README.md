@@ -1,4 +1,7 @@
 # metrics-reporter
+[![Build Status](https://travis-ci.org/jramoyo/node-metrics-reporter.svg?branch=master)](https://travis-ci.org/jramoyo/node-metrics-reporter)
+
+Metrics reporting for Node.js.
 
 Inspired by [`node-metrics-influxdb`](https://github.com/brandonhamilton/node-metrics-influxdb), but with an added abstraction allowing different reporting back-ends (only InfluxDB is supported for now).
 
